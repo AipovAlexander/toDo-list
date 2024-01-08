@@ -1,0 +1,325 @@
+@import url("./nullstyle.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&family=Ysabeau+Infant:wght@400;700&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: rgba(250, 235, 215, 0.663);
+}
+
+.title {
+  margin: 25px 0 0 0;
+  font-size: 36px;
+  padding-bottom: 25px;
+  font-weight: 700;
+}
+
+.time {
+  margin: 10px 0 15px 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(86, 204, 18, 0.826);
+}
+
+.container {
+  display: flex;
+  min-width: 40%;
+  margin: 0 0 20px 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+
+  border: 3px solid rgba(204, 204, 204, 0.176);
+  border-radius: 7px;
+  padding: 5px;
+}
+
+.container input {
+  flex: 1;
+}
+
+.container button {
+  background-color: rgba(233, 190, 20, 0.17);
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.container button:hover {
+  transition: 0.3s ease-in-out;
+  background-color: rgba(233, 190, 20, 0.282);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-container input[type="text"] {
+  flex: 1;
+}
+
+.input-container input[type="checkbox"] {
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+.wrapForInput {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+
+  margin: 10px 0 10px 0;
+  border-radius: 5px;
+
+  position: relative;
+  padding: 5px;
+  width: 59%;
+}
+
+.inputfordate {
+}
+
+.input-container .close-icon {
+  position: absolute;
+  right: 10px;
+  top: 0%;
+
+  width: 35px;
+  cursor: pointer;
+  opacity: 0;
+  color: black;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.input-container:hover .close-icon {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.img {
+  width: 30px;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.highblock {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.lowblock {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text1 {
+  padding: 5px;
+  font-size: 18px;
+  margin: 5px 5px 0px 5px;
+  letter-spacing: 1px;
+}
+
+.test {
+  border: 1px solid #000;
+}
+.datepicker {
+  border: 1px solid #000;
+}
+
+.input {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.inputlow {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  background: url(https://static.thenounproject.com/png/4066364-200.png)
+    no-repeat center;
+  background-size: contain;
+  /* background-color: rgba(150, 205, 119, 0.648); */
+  /* padding: 8px 12px; */
+  border: 3px solid rgba(204, 204, 204, 0.176);
+
+  padding: 11px 14px;
+  border-radius: 8px;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.deadline {
+  margin: -10px;
+  padding: 10px 10px 10px 10px;
+  font-size: 18px;
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+  padding: 10px; /* Добавляем немного отступов для улучшения визуального восприятия */
+  color: rgb(25, 27, 74);
+}
+
+.deadline::before {
+  content: "";
+  background-image: url("https://static-00.iconduck.com/assets.00/timer-icon-512x512-vrl212i7.png");
+  background-size: 20px 20px; /* Ширина и высота иконки */
+  margin-right: 5px;
+  margin-bottom: -4px;
+  display: inline-block;
+  width: 20px; /* Ширина блока псевдоэлемента */
+  height: 20px; /* Высота блока псевдоэлемента */
+}
+
+.hidden {
+  display: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0 0 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__body {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.body {
+  width: 870px;
+}
+
+.header__title {
+  font-size: 26px;
+  font-weight: 700;
+  text-shadow: 1px 1px 5px rgba(51, 49, 49, 0.388);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.btn {
+  background-color: rgba(150, 205, 119, 0.506);
+  padding: 8px 20px;
+  border-radius: 8px;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: #fff;
+}
+
+.btn:hover {
+  transition: 0.3s ease-in-out;
+  background-color: rgba(150, 205, 119, 0.752);
+}
+
+.avatar {
+  cursor: pointer;
+  margin: 0 0px 0 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.profile {
+  margin: 50px 0 0 0;
+}
+.profile__userinfo {
+  display: flex;
+}
+.profile__avatar {
+}
+.avatarprofile {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border-bottom: 5px solid rgba(126, 123, 123, 0.17);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.profile__body {
+}
+
+.flexbody {
+  display: flex;
+}
+
+.profile__username {
+  margin: 0 10px;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
+
+.profile__editbutton {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  transition: 0.3s ease-in-out;
+}
+
+.profile__editbutton:hover {
+  background-color: rgba(234, 154, 4, 0.203);
+}
+
+.profile__links {
+  display: flex;
+  margin: 10px 0 0 0;
+}
+
+.img {
+  margin: 0px 5px 0px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  transition: 0.3s ease-in-out;
+}
+
+.img:hover {
+  width: 37px;
+  height: 37px;
+}
+
+.settings {
+  margin: 20px 0 0 0;
+}
+
+.settings__flex {
+  display: flex;
+}
+
+.settings__title {
+  font-size: 28px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+.item {
+  align-items: center;
+  justify-content: center;
+  margin: 30px 30px 0 0px;
+}
+
+.item__title {
+  font-size: 24px;
+  margin: 0 0 25px 0;
+}

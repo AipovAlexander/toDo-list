@@ -1,0 +1,61 @@
+/* Основной фон страницы */
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+/* Заголовок */
+.header__title {
+  color: #fff;
+}
+
+/* Ссылки и кнопки */
+a,
+button {
+  color: #fff;
+  background-color: #333;
+  border: none;
+}
+
+/* Профиль пользователя */
+.profile {
+}
+
+/* Стиль темного переключателя */
+.toggle {
+  background-color: #333;
+  border-color: #666;
+}
+
+.item {
+  background-color: #333;
+}
+
+/* Стиль темных иконок */
+.img {
+  filter: invert(1); /* Инвертирует цвет иконок */
+}
+
+/* Стиль для ввода текста */
+input[type="text"],
+input[type="datetime-local"] {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #666;
+}
+
+/* Стиль для заголовков блоков */
+.title {
+  color: #fff;
+}
+
+/* Стиль для форм и контейнеров */
+.container {
+  background-color: #333;
+  border: 1px solid #666;
+}
+
+/* Стиль для иконок внутри форм */
+.container .img {
+  filter: invert(1);
+}

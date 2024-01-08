@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/toggle.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="body">
+        <header class="header">
+          <h1 class="header__title">Agenda</h1>
+          <div class="header__body">
+            <button class="login btn">Войти</button>
+            <button class="register btn">Регистрация</button>
+            <div class="header__login hidden">Sanek116</div>
+            <img
+              src="https://api.parkseason.ru/images/styles/1080_720/bc/56/83db3e73d080e4429216c6b9d989842561e83b6eb94be910465493.jpg"
+              alt=""
+              class="avatar hidden"
+            />
+          </div>
+        </header>
+        <div class="profile hidden">
+          <div class="profile__userinfo">
+            <div class="profile__avatar">
+              <img
+                src="https://api.parkseason.ru/images/styles/1080_720/bc/56/83db3e73d080e4429216c6b9d989842561e83b6eb94be910465493.jpg"
+                alt=""
+                class="avatarprofile"
+              />
+            </div>
+            <div class="profile__body">
+              <div class="flexbody">
+                <div class="profile__username">Sanek116</div>
+                <div class="profile__editbutton"></div>
+              </div>
+              <div class="profile__links">
+                <div class="link__tg">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/800px-Telegram_logo.svg.png"
+                    alt=""
+                    class="img"
+                  />
+                </div>
+                <div class="link__vk">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/VK_Compact_Logo_%282021-present%29.svg/2048px-VK_Compact_Logo_%282021-present%29.svg.png"
+                    alt=""
+                    class="img"
+                  />
+                </div>
+                <div class="link__github">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png"
+                    alt=""
+                    class="img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="settings">
+            <div class="settings__title">Настройки</div>
+            <div class="settings__flex">
+              <div class="item">
+                <input type="checkbox" id="switch" />
+
+                <div class="app">
+                  <div class="content">
+                    <div class="circle">
+                      <div class="crescent"></div>
+                    </div>
+                    <p class="heading">Выберите тему</p>
+                    <p>
+                      <br />
+                    </p>
+                    <label for="switch">
+                      <div class="toggle"></div>
+                      <div class="names">
+                        <p class="light">Light</p>
+                        <p class="dark">Dark</p>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="https://www.svgrepo.com/show/506614/user-edit.svg"
+                  alt=""
+                  class="img"
+                />
+                <div class="item__title">Редактировать профиль</div>
+                <div class="button__edit btn">Редактировать</div>
+              </div>
+              <div class="item">
+                <img
+                  src="https://www.svgrepo.com/show/65414/door-exit.svg"
+                  alt=""
+                  class="img"
+                />
+                <div class="item__title">Выйти из личного кабинета</div>
+                <div class="button__exit btn">Выйти</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Высокий приоритет ------------------------------------------------------------------------------------------------------------- -->
+        <div class="highblock block">
+          <div class="highblock__title title">HIGH</div>
+
+          <form class="highblock__input-container container">
+            <input placeholder="Введите задачу" id="highblock__input" />
+            <input type="datetime-local" class="input" />
+
+            <button>
+              <img
+                src="https://static.thenounproject.com/png/2714927-200.png"
+                class="img"
+                alt=""
+              />
+            </button>
+          </form>
+        </div>
+        <!-- Низкий приоритет ------------------------------------------------------------------------------------------------------------- -->
+        <div class="lowblock block">
+          <div class="lowblock__title title">LOW</div>
+
+          <form class="lowblock__input-container container">
+            <input placeholder="Введите задачу" id="lowblock__input" />
+            <input type="datetime-local" class="inputlow" />
+
+            <button type="submit">
+              <img
+                src="https://static.thenounproject.com/png/2714927-200.png"
+                class="img"
+                alt=""
+              />
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/index.js"></script>
+  </body>
+</html>

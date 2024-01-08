@@ -1,0 +1,116 @@
+/* GENERAL */
+@import url("https://fonts.googleapis.com/css?family=Rubik");
+
+.item {
+  background-color: rgba(250, 235, 215, 0.663);
+  width: 33.33%;
+  align-items: center;
+  display: flex;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  flex-direction: column;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(5%);
+}
+.circle {
+  position: relative;
+  border-radius: 100%;
+  width: 8rem;
+  height: 8rem;
+  background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+  margin: auto;
+}
+.crescent {
+  position: absolute;
+  border-radius: 100%;
+  right: 0;
+  width: 6rem;
+  height: 6rem;
+  background: white;
+  transform: scale(0);
+  transform-origin: top right;
+  transition: transform 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+p {
+  font-size: 90%;
+}
+.heading {
+  font-size: 140%;
+  font-weight: bolder;
+  margin: 3rem 0 0.2rem 0;
+}
+label,
+.toggle {
+  height: 2.8rem;
+  border-radius: 100px;
+}
+label {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+  position: relative;
+  margin: 1.8rem 0 4rem 0;
+  cursor: pointer;
+}
+.toggle {
+  position: absolute;
+  width: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.names {
+  font-size: 90%;
+  font-weight: bolder;
+  width: 65%;
+  margin-left: 17.5%;
+  margin-top: 0.5%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+}
+.dark {
+  opacity: 0.5;
+}
+.mark {
+  border-radius: 100px;
+  background-color: black;
+}
+
+#switch {
+  display: none;
+}
+
+[type="checkbox"]:checked + .app .toggle {
+  transform: translateX(100%);
+  background-color: #34323d;
+}
+
+[type="checkbox"]:checked + .app .crescent {
+  transform: scale(1);
+  background: #26242e;
+}
+[type="checkbox"]:checked + .app .circle {
+  background: linear-gradient(40deg, #8983f7, #a3dafb 70%);
+}
+[type="checkbox"]:checked + .app .main-circle {
+  background: linear-gradient(40deg, #8983f7, #a3dafb 70%);
+}
+
+[type="checkbox"]:checked + .app .fab {
+  background-color: #34323d;
+}
+
+.light {
+  margin: 15px 0 0 0;
+}
+.dark {
+  margin: 15px 0 0 0;
+  color: #fff;
+}
